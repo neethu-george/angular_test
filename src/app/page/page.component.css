@@ -1,0 +1,82 @@
+.propic
+{
+    width:30px;
+    height:30px;
+}
+
+.menu
+{
+    height:30px;
+    width:30px;
+}
+.post
+{
+    width: 100%;
+}
+
+.like
+{
+    width:30px;
+    height:30px;
+}
+
+.comment
+{
+    width:25px;
+    height:25px;
+}
+.send
+{
+    width:25px;
+    height:25px;
+}
+.book
+{
+    width:32px;
+    height:32px;
+}
+
+.title-class
+{
+    white-space: nowrap;
+    width: 255px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+
+
+
+input[type="checkbox"] {
+    display:none;
+}
+
+label {
+  color:blue;
+  text-decoration:underline;
+  margin-top:10px;
+  cursor:pointer;
+  display:inline-block;
+}
+
+label:after {
+  content:"more";  
+}
+
+input:checked ~ label:after {
+  content:"less";  
+}
+
+.inner {
+  max-height:100px;
+  overflow:hidden;
+  transition:all .3s ease;
+  width:100px;
+}
+
+input:checked + .inner {
+  max-height:500px;
+}
